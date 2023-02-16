@@ -3,10 +3,37 @@
 
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-item:hover {
+  background-color: #2e3337;
+}
+
 .header-section {
   height: 100vh;
   width: 100%;
   background-image: url(../img/header.jpg);
   background-size: cover;
   background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-row {
+  margin: auto 10%;
+  background-color: #11121390;
+  padding: 30px;
+  backdrop-filter: blur(1px);
+}
+
+
+@media  (max-width: 768px) {
+  .header-section {
+    height: 50vh;
+  }
 }
