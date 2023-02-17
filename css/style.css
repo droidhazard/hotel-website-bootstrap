@@ -5,9 +5,19 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
 
+::selection {
+  background-color: #de9000;
+}
+
+::-moz-selection {
+  background-color: #de9000;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
+
+
 
 .nav-item:hover {
   background-color: #2e3337;
@@ -31,8 +41,28 @@ body {
   backdrop-filter: blur(1px);
 }
 
+.divider-img {
+  height: 26px;
+  width: 300px;
+  display: inline-block;
+}
 
-@media  (max-width: 768px) {
+.square_48px {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 20px;
+}
+
+
+/* *  ============================== */
+/* *  ============================== */
+/* *  ============================== */
+/* * RESPONSIVENESS */
+/* *  ============================== */
+/* *  ============================== */
+
+
+@media (max-width: 768px) {
   .header-section {
     height: 50vh;
   }
